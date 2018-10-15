@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/manager.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+</head>
+
+<body>
+    <nav>
+        <div class="heading" id="my-heading">
+            <span class="title-1 logo"><img src="assets/images/logo_inv.png">Store Manager</span>
+            <div>
+                <a href="index.html">Logout</a>
+                <a <button class="tablink" onclick="openPage('Sales', this,)">Sales</button></a>
+            </div>
+        </div>
+    </nav>
+
+    </div>
+    <!-- sales table -->
+    <div id="Sales" class="column tabcontent">
+        <table>
+            <tr>
+                <th>Product Name</th>
+                <th>Quantity Sold</th>
+                <th>Price Per Item</th>
+            </tr>
+            <tr>
+                <td>Toilet Paper</td>
+                <td>230</td>
+                <td>1000</td>
+
+            </tr>
+            <tr>
+                <td>Cooking oil</td>
+                <td>29</td>
+                <td>21.000</td>
+
+            </tr>
+            <tr>
+                <td>Mattresses</td>
+                <td>34</td>
+                <td>240.000</td>
+
+            </tr>
+            <tr>
+                <td>Plastics</td>
+                <td>340</td>
+                <td>1200</td>
+
+            </tr>
+            <tr>
+                <td>Cakes</td>
+                <td>300</td>
+                <td>2000</td>
+
+            </tr>
+            <tr>
+                <td>sanitary wear</td>
+                <td>7</td>
+                <td>4000</td>
+
+            </tr>
+            <tr>
+                <td>Car seat covers</td>
+                <td>8</td>
+                <td>65000</td>
+
+            </tr>
+            <tr>
+                <td>Macbook pro</td>
+                <td>3</td>
+                <td>96000.000</td>
+
+            </tr>
+            <tr>
+                <td>Baking Flour</td>
+                <td>97</td>
+                <td>6800</td>
+
+            </tr>
+            <tr>
+                <td>Soda 2Ltr</td>
+                <td>300</td>
+                <td>3000</td>
+
+            </tr>
+            <tr>
+                <td>Milk 1Ltr</td>
+                <td>230</td>
+                <td>3000</td>
+
+            </tr>
+            <tr>
+                <td>OMO Detergent 1Kg</td>
+                <td>45</td>
+                <td>5800</td>
+
+            </tr>
+            <tr>
+                <td>Tents 10 * 10</td>
+                <td>2</td>
+                <td>160.000</td>
+
+            </tr>
+            <tr>
+                <td>Bread 1Kg</td>
+                <td>460</td>
+                <td>30000</td>
+
+            </tr>
+        </table>
+    </div>
+
+    <!-- Attendants table -->
+        <!-- add product -->
+    <!-- footer -->
+    <div class="footer"><img class="cover-image" src="assets/images/logo_inv.png" alt="todo-list image">
+        <small>&copy;Store Manager 2018</small>
+    </div>
+    <!-- js -->
+    <script>
+        function openPage(pageName, elmnt) {
+            var i, tabcontent, tablinks;
+            // Hide all elements with class="tabcontent" by default */
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Remove the background color of all tablinks/buttons
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+            // Show the specific tab content
+            document.getElementById(pageName).style.display = "block";
+        }
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+</body>
+
+</html>
