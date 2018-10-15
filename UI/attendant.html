@@ -13,6 +13,7 @@
             <span class="title-1 logo"><img src="assets/images/logo_inv.png">Store Manager</span>
             <div>
                 <a href="index.html">Logout</a>
+                <a <button class="tablink" onclick="openPage('info-column', this,)">Shopping Cart</button></a>
                 <a <button class="tablink" onclick="openPage('Profile', this,)" id="defaultOpen">Profile</button></a>
             </div>
         </div>
@@ -32,6 +33,20 @@
         </div>
     </div>
     <!-- shopping cart -->
+    <div id="info-column" class="column tabcontent">
+        <div id="todo-list-header">
+            <p>shopping chart</p>
+            <input type="text" id="myInput" placeholder="Enter Product Name...">
+            <span onclick="newElement()" class="addBtn">Add</span>
+        </div>
+        <ul id="todo-list-items">
+            <li>Cooking Oil</li>
+            <li>Detergent</li>
+            <li>Scrubbing brush</li>
+            <li>Tooth paste</li>
+        </ul>
+        <input type="submit" value="Make Sale">
+    </div>
     <!-- products table -->
     <div class="footer"><img class="cover-image" src="assets/images/logo_inv.png" alt="todo-list image">
         <small>&copy;Store Manager 2018</small>
