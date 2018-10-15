@@ -243,6 +243,14 @@ input {
     table {
         max-width: 100%;
     }
+
+    #Add-Product {
+        width: 100%;
+        margin: auto;
+    }
+    table {
+        margin: auto;
+    }
 }
 
 /* ----Footer--------- */

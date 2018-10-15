@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Arial;
+    font-family: Raleway, "Open Sans", "Helvetica Neue", Helvetica, Aerial, sans-serif;
     padding: 20px;
     /* background-color: indianred; */
     width: 100%;
@@ -158,6 +158,11 @@ tr:nth-child(even) {
   .tabcontent {
     display: none;
     height: 100%;
+  }
+  /* profile */
+  #Profile p {
+    font-family: cursive;
+    font-size: 20px;
   }
 
 /* ---shopping cart-- */
@@ -353,19 +358,14 @@ ul li.checked::before {
 .footer {
     padding: 20px;
     text-align: center;
-    /* margin-top: 600px; */
 }
-.footer img {
+
+.footer .cover-image  {
     width: 2%;
 }
 
-footer,
+.footer,
 small {
     font-weight: 400;
     color: black;
-}
-
-footer,
-body {
-    font-family: Raleway,"Open Sans", "Helvetica Neue", Helvetica, Aerial, sans-serif;
 }
