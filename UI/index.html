@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/index.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="heading" id="my-heading">
+            <span class="title-1 logo"><img src="assets/images/logo_inv.png">Store Manager</span>
+            <div>
+                <a <button class="tablink" onclick="openPage('Manager', this,)" id="defaultOpen">Manager</button></a>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- login -->
+    <!-- login-manger -->
+    <!-- signup -->
+    <div class="tabcontent column" id="Manager">
+        <form action="#">
+            <p>signUp</p>
+            <input type="text" name="name" placeholder="Enter a name" required>
+            <input type="email" name="email" placeholder="Enter email address" required>
+            <input type="password" name="password" placeholder="Enter a password" required>
+            <input onclick="openPage('Login-Manager', this,)" type="submit" value="SignUp">
+        </form>
+    </div>
+
+    <div class="footer"><img class="cover-image" src="assets/images/logo_inv.png" alt="todo-list image">
+        <small>&copy;Store Manager 2018</small>
+    </div>
+    <script>
+        function openPage(pageName, elmnt) {
+            var i, tabcontent, tablinks;
+            // Hide all elements with class="tabcontent" by default */
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Remove the background color of all tablinks/buttons
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+            // Show the specific tab content
+            document.getElementById(pageName).style.display = "block";
+        }
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+</body>
+</html>
