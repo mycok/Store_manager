@@ -65,7 +65,7 @@ body {
     width: 10%;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 960px) {
     .heading a {
         float: none;
         display: block;
@@ -107,6 +107,7 @@ td, th {
 th {
     background-color: indianred;
     color: white;
+
 }
 
 tr:nth-child(even) {
@@ -238,14 +239,10 @@ input {
         width: 100%;
         margin-bottom: 5px;
     }
-}
 
-/* Clear floats after the columns */
-
-.column:after {
-    content: "";
-    display: table;
-    clear: both;
+    table {
+        max-width: 100%;
+    }
 }
 
 /* ----Footer--------- */
