@@ -191,6 +191,20 @@ table .btn:hover {
     margin: auto;
 }
 
+#Add-Product input[type="submit"]{
+    display: block;
+    background-color: indianred;
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 16px;
+    font-size: 14px;
+}
+
 p {
     text-align: center;
     font-family: cursive;

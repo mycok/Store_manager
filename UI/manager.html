@@ -3,7 +3,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/manager.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/manager.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 </head>
 
@@ -99,6 +99,10 @@
                 <td>Bread 1Kg</td>
                 <td>Bakeries</td>
                 <td>1000</td>
+            </tr>
+            <tr>
+                <td colspan="3"><button class="tablink green btn" onclick="openPage('Add-Product', this,)">Add Product</button>
+                    <button class="tablink btn">Delete Product</button></td>
             </tr>
         </table>
     </div>
@@ -198,7 +202,17 @@
     </div>
 
     <!-- Attendants table -->
-        <!-- add product -->
+    <!-- add product -->
+    <div class="tabcontent column" id="Add-Product">
+        <form action="#">
+            <p>New Product</p>
+            <input type="text" name="name" placeholder="Product name" required>
+            <input type="text" name="category" placeholder="Product category" required>
+            <input type="text" name="quantity" placeholder="Stock quantity" required>
+            <input type="text" name="price" placeholder="Product price" required>
+            <input type="submit" value="Create"
+        </form>
+    </div>
 
     <!-- footer -->
     <div class="footer"><img class="cover-image" src="assets/images/logo_inv.png" alt="todo-list image">
