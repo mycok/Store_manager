@@ -13,6 +13,7 @@
             <span class="title-1 logo"><img src="assets/images/logo_inv.png">Store Manager</span>
             <div>
                 <a href="index.html">Logout</a>
+                <a <button class="tablink" onclick="openPage('All-Attendants', this,)">Attendants</button></a>
                 <a <button class="tablink" onclick="openPage('Products', this,)" id="defaultOpen">Products</button></a>
                 <a <button class="tablink" onclick="openPage('Sales', this,)">Sales</button></a>
                 <a <button class="tablink" onclick="openPage('Profile', this,)">Profile</button></a>
@@ -211,6 +212,38 @@
     </div>
 
     <!-- Attendants table -->
+    <div id="All-Attendants" class="column tabcontent">
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>Attendant Name</th>
+                <th>Total Sales</th>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Anders</td>
+                <td>234</td>
+
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Michael</td>
+                <td>600</td>
+
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Rolands</td>
+                <td>54</td>
+
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Bennett</td>
+                <td>67</td>
+            </tr>
+        </table>
+    </div>
     <!-- add product -->
     <div class="tabcontent column" id="Add-Product">
         <form action="#">
