@@ -148,8 +148,18 @@ table .btn:hover {
 
 .profile {
     text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    margin-top: 3px;
+
 
     }
+
+span {
+    color: grey;
+    font-size: 18px;
+}
 
 .right-image {
         margin-top: 10px;
@@ -187,12 +197,12 @@ table .btn:hover {
   }
 
   /* new product */
-  #Add-Product {
+  #Add-Product, #Add-Attendant {
     width: 60%;
     margin: auto;
 }
 
-#Add-Product input[type="submit"]{
+#Add-Product input[type="submit"], #Add-Attendant input[type="submit"] {
     display: block;
     background-color: indianred;
     border: none;
@@ -212,7 +222,7 @@ p {
     font-size: 20px;
 }
 
-input {
+input, select {
 
     padding: 12px;
     border-style: outset;
@@ -244,7 +254,7 @@ input {
         max-width: 100%;
     }
 
-    #Add-Product {
+    #Add-Product, #Add-Attendant {
         width: 100%;
         margin: auto;
     }
