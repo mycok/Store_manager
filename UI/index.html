@@ -12,13 +12,31 @@
             <span class="title-1 logo"><img src="assets/images/logo_inv.png">Store Manager</span>
             <div>
                 <a <button class="tablink" onclick="openPage('Manager', this,)" id="defaultOpen">Manager</button></a>
-
+                <a <button class="tablink" onclick="openPage('Attendant', this,)">Attendant</button></a>
             </div>
         </div>
     </nav>
 
     <!-- login -->
+    <div class="tabcontent column" id="Attendant">
+        <p>Login</p>
+        <form action="attendant.html">
+            <input type="text" name="name" placeholder="Enter name" required>
+            <input type="password" name="password" placeholder="Enter a password" required>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
     <!-- login-manger -->
+    <div class="tabcontent column" id="Login-Manager">
+        <p>Login</p>
+        <form action="manager.html">
+            <input type="text" name="name" placeholder="Enter name" required>
+            <input type="password" name="password" placeholder="Enter a password" required>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
     <!-- signup -->
     <div class="tabcontent column" id="Manager">
         <form action="#">
@@ -27,6 +45,7 @@
             <input type="email" name="email" placeholder="Enter email address" required>
             <input type="password" name="password" placeholder="Enter a password" required>
             <input onclick="openPage('Login-Manager', this,)" type="submit" value="SignUp">
+            <p>Already have an account? <a onclick="openPage('Login-Manager', this,)">Login</a></p>
         </form>
     </div>
 
