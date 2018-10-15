@@ -14,6 +14,7 @@
             <div>
                 <a href="index.html">Logout</a>
                 <a <button class="tablink" onclick="openPage('info-column', this,)">Shopping Cart</button></a>
+                <a <button class="tablink" onclick="openPage('Products', this,)">Products</button></a>
                 <a <button class="tablink" onclick="openPage('Profile', this,)" id="defaultOpen">Profile</button></a>
             </div>
         </div>
@@ -48,13 +49,93 @@
         <input type="submit" value="Make Sale">
     </div>
     <!-- products table -->
+    <div id="Products" class="column tabcontent">
+        <table>
+            <tr>
+                <th>Product Name</th>
+                <th>Category</th>
+                <th>In-Stock Quantity</th>
+            </tr>
+            <tr>
+                <td>Toilet Paper</td>
+                <td>Sanitary Wear</td>
+                <td>600</td>
+            </tr>
+            <tr>
+                <td>Cooking oil</td>
+                <td>Food Products</td>
+                <td>1200</td>
+            </tr>
+            <tr>
+                <td>Mattresses</td>
+                <td>Bedroom Products</td>
+                <td>2400</td>
+            </tr>
+            <tr>
+                <td>Plastics</td>
+                <td>Kitchen Ware</td>
+                <td>5600</td>
+            </tr>
+            <tr>
+                <td>Cakes</td>
+                <td>bakeries</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>Harpic Gel 100ml</td>
+                <td>Sanitary Wear</td>
+                <td>2000</td>
+            </tr>
+            <tr>
+                <td>Car seat covers</td>
+                <td>Car Accessories</td>
+                <td>78</td>
+            </tr>
+            <tr>
+                <td>Macbook pro</td>
+                <td>Computers/Laptops</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Baking Flour</td>
+                <td>Food Products</td>
+                <td>800</td>
+            </tr>
+            <tr>
+                <td>Soda 2Ltr</td>
+                <td>Food Products</td>
+                <td>620</td>
+            </tr>
+            <tr>
+                <td>Milk 1Ltr</td>
+                <td>Food Products</td>
+                <td>700</td>
+            </tr>
+            <tr>
+                <td>OMO Detergent 1Kg</td>
+                <td>Sanitary Wear</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Tents 10 * 10</td>
+                <td>Out door gear</td>
+                <td>30</td>
+
+            </tr>
+            <tr>
+                <td>Bread 1Kg</td>
+                <td>Bakeries</td>
+                <td>1000</td>
+            </tr>
+        </table>
+    </div>
     <div class="footer"><img class="cover-image" src="assets/images/logo_inv.png" alt="todo-list image">
         <small>&copy;Store Manager 2018</small>
     </div>
     </div>
 </body>
 <script>
-    function openPage(pageName,elmnt) {
+    function openPage(pageName, elmnt) {
         var i, tabcontent, tablinks;
         // Hide all elements with class="tabcontent" by default */
         tabcontent = document.getElementsByClassName("tabcontent");
@@ -65,7 +146,7 @@
         // Remove the background color of all tablinks/buttons
         tablinks = document.getElementsByClassName("tablink");
         for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].style.backgroundColor = "";
+            tablinks[i].style.backgroundColor = "";
         }
         // Show the specific tab content
         document.getElementById(pageName).style.display = "block";
@@ -73,4 +154,5 @@
     // Get the element with id="defaultOpen" and click on it
     document.getElementById("defaultOpen").click();
 </script>
+
 </html>
