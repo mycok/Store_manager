@@ -67,7 +67,7 @@ body {
     width: 10%;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 960px) {
     .heading a {
         float: none;
         display: block;
@@ -113,12 +113,6 @@ th {
 
 tr:nth-child(even) {
     background-color: #dddddd;
-}
-
-table caption {
-    text-align: center;
-    font-size: 20px;
-    margin-bottom: 5px;
 }
 
 /* ---profile----- */
@@ -335,7 +329,16 @@ ul li.checked::before {
     input {
         padding: 10px;
     }
+
+    table {
+        width: 100%;
+    }
 }
+
+@media screen and (max-width: 320px) {
+   table {
+        max-width: 100%;
+    }
 
 /* Clear floats after the columns */
 
