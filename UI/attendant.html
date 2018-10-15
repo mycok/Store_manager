@@ -26,12 +26,12 @@
             <div class="right-image">
                 <img src="assets/images/avatar.png" alt="default-avator">
             </div>
-            <p>Role: Attendant</p>
-            <p>Name: Micky</p>
-            <p>Status: Active</p>
-            <p>Total Sales: 245</p>
-            <p>Products sales: 245</p>
-            <p>Sales revenue: 346.0000shs</p>
+            <p><span>Role: </span>Attendant</p>
+            <p><span>Name: </span>Micky</p>
+            <p><span>Status: </span>Active</p>
+            <p><span>Total Sales: </span>245</p>
+            <p><span>Product sales: </span>245</p>
+            <p><span>Sales revenue: </span>346.0000shs</p>
         </div>
     </div>
     <!-- shopping cart -->
@@ -49,26 +49,67 @@
         </ul>
         <input type="submit" value="Make Sale">
     </div>
+    <!-- Product card -->
+    <div id="Macbook" class="display-product column tabcontent">
+        <img src="assets/images/macbook air.jpg" alt="Macbook Air" style="width:100%">
+        <h1>MacBook Air</h1>
+        <p class="price">$1299.0</p>
+        <p>MacBook Pro 13in (2018) specs</p>
+        <p>Quad-core Intel Core i5 and i7 processors up to 2.7GHz with Turbo Boost up to 4.5GHz</p>
+        <p>Intel Iris Plus integrated graphics 655 with 128MB of eDRAM</p>
+        <p>Up to 2TB SSD storage</p>
+        <p>True Tone display</p>
+        <p>Apple T2 chip</p>
+        <p>Touch Bar</p>
+        <p><button class="" onclick="openPage('info-column', this,)">Add to Cart</button></p>
+    </div>
+
+    <div id="Toilet Paper" class="display-product column tabcontent">
+        <img src="assets/images/tp.jpeg" alt="Toilet Paper" style="width:100%">
+        <h1>Paseo smart Toilet Paper</h1>
+        <p class="price">$2.0</p>
+        <p>Comfortable toilet paper rolls</p>
+        <p>12 pieces per rolls</p>
+        <p><button class="" onclick="openPage('info-column', this,)">Add to Cart</button></p>
+    </div>
+
+    <div id="Cooking Oil" class="display-product column tabcontent">
+        <img src="assets/images/cooking oil.jpg" alt="Ufuta Cooking Oil" style="width:100%">
+        <h1>Ufuta Cooking Oil</h1>
+        <p class="price">$4.0</p>
+        <p>Collestral free cooking oil made from natural sun flower</p>
+        <p>5 Litres</p>
+        <p><button class="" onclick="openPage('info-column', this,)">Add to Cart</button></p>
+    </div>
+
+    <div id="Mattress" class="display-product column tabcontent">
+        <img src="assets/images/matt.jpg" alt="Mattress" style="width:100%">
+        <h1>Soft Form Mattress</h1>
+        <p class="price">$4.0</p>
+        <p>Extending comfort to your bedroom</p>
+        <p>Available in 5 * 6 / 6 * 6</p>
+        <p><button class="" onclick="openPage('info-column', this,)">Add to Cart</button></p>
+    </div>
     <!-- products info -->
     <div id="Product-Info" class="column tabcontent">
         <table>
             <tr>
-                <th>Product Name</th>
+                <th>Product Name [Click product name to view details]</th>
                 <th>Category</th>
                 <th>Price Per Item</th>
             </tr>
             <tr>
-                <td>Toilet Paper</td>
+                <td><a onclick="openPage('Toilet Paper', this,)">Toilet Paper</a></td>
                 <td>Sanitary Wear</td>
                 <td>1000</td>
             </tr>
             <tr>
-                <td>Cooking oil</td>
+                <td><a onclick="openPage('Cooking Oil', this,)">Cooking Oil</a></td>
                 <td>Food Products</td>
                 <td>12000</td>
             </tr>
             <tr>
-                <td>Mattresses</td>
+                <td><a onclick="openPage('Mattress', this,)">Mattress</a></td>
                 <td>Bedroom Products</td>
                 <td>240000</td>
             </tr>
@@ -93,7 +134,7 @@
                 <td>78000</td>
             </tr>
             <tr>
-                <td>Macbook pro</td>
+                <td><a onclick="openPage('Macbook', this,)">Macbook pro</a></td>
                 <td>Computers/Laptops</td>
                 <td>9600.000</td>
             </tr>
