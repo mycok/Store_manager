@@ -106,6 +106,14 @@ td, th {
     padding: 8px;
 }
 
+td a {
+    cursor: pointer;
+}
+
+td a:hover {
+    color: indianred;
+}
+
 th {
     background-color: indianred;
     color: white;
@@ -122,9 +130,44 @@ tr:nth-child(even) {
 
 .profile {
     text-align: center;
-
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
     }
 
+span {
+    color: grey;
+    font-size: 18px;
+}
+/* product display card */
+.display-product {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+}
+.display-product button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: indianred;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  .display-product button:hover {
+    opacity: 0.7;
+  }
+
+.price {
+    color: grey;
+    font-size: 22px;
+  }
+
+/*  */
 .right-image {
         margin-top: 10px;
 
@@ -158,6 +201,7 @@ tr:nth-child(even) {
   .tabcontent {
     display: none;
     height: 100%;
+    margin-top: 5px;
   }
   /* profile */
   #Profile p {
@@ -337,6 +381,11 @@ ul li.checked::before {
 
     table {
         width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    th {
+        text-align: center;
     }
 }
 
