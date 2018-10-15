@@ -14,9 +14,9 @@
             <div>
                 <a href="index.html"> Logout</a>
                 <a <button class="tablink" onclick="openPage('All-Attendants', this,)">Attendants</button></a>
-                <a <button class="tablink" onclick="openPage('Products', this,)" id="defaultOpen">Products</button></a>
+                <a <button class="tablink" onclick="openPage('Products', this,)">Products</button></a>
                 <a <button class="tablink" onclick="openPage('Sales', this,)">Sales</button></a>
-                <a <button class="tablink" onclick="openPage('Profile', this,)">Profile</button></a>
+                <a <button class="tablink" onclick="openPage('Profile', this,)" id="defaultOpen">Profile</button></a>
             </div>
         </div>
     </nav>
@@ -26,9 +26,9 @@
             <div class="right-image">
                 <img src="assets/images/avatar.png" alt="default-avator">
             </div>
-            <p>Role: Manager</p>
-            <p>Username: Micky</p>
-            <p>Status: Active</p>
+            <p class="role"><span>Name:  </span>Micky<p>
+            <p class="role"><span>Role:  </span>Manager</p>
+            <p class="role"><span>Status:  </span>Active</p>
         </div>
     </div>
     <!-- products table -->
@@ -226,6 +226,9 @@
                 <td>Bennett</td>
                 <td>67</td>
             </tr>
+            <tr>
+                <td colspan="3"><button class="tablink green btn" onclick="openPage('Add-Attendant', this,)">New Attendant</button>
+            </tr>
         </table>
     </div>
     <!-- add product -->
@@ -233,10 +236,28 @@
         <form action="#">
             <p>New Product</p>
             <input type="text" name="name" placeholder="Product name" required>
-            <input type="text" name="category" placeholder="Product category" required>
-            <input type="text" name="quantity" placeholder="Stock quantity" required>
-            <input type="text" name="price" placeholder="Product price" required>
-            <input type="submit" value="Create" </form> </div> </form> </div>
+            <select name="category">
+                <option value="sanitary Wear">Sanitary Wear</option>
+                <option value="food products">Food Products</option>
+                <option value="kitchen wear">Kitchen Ware</option>
+                <option value="bedroom products">Bedroom Products</option>
+                <option value="bakeries">Bakeries</option>
+                <option value="car accessories">Car Accessories</option>
+                <option value="out door gear">Out Door Gear</option>
+            </select>
+            <input type="number" name="quantity" min="1" placeholder="Stock quantity" required>
+            <input type="number" name="price" min="100" step="50" placeholder="Product price" required>
+            <input type="submit" value="Create">
+        </form>
+    </div>
+    <!-- create attendant account -->
+    <div class="tabcontent column" id="Add-Attendant">
+        <form action="#">
+            <p>New Attendant</p>
+            <input type="text" name="name" placeholder="Name" required>
+            <select name="" placeholder="Id" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Create">
         </form>
     </div>
     <!-- footer -->
