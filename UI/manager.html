@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/manager.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <script type="text/javascript" src="assets/js/main.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="heading" id="my-heading">
+            <span class="title-1 logo"><img src="assets/images/logo_inv.png">Store Manager</span>
+            <div>
+                <a href="index.html"> Logout</a>
+                <a <button class="tablink" onclick="openPage('All-Attendants', this,)">Attendants</button></a>
+                <a <button class="tablink" onclick="openPage('Products', this,)">Products</button></a>
+                <a <button class="tablink" onclick="openPage('Sales', this,)">Sales</button></a>
+                <a <button class="tablink" onclick="openPage('Profile', this,)" id="defaultOpen">Profile</button></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- profile card -->
+    <div class="profile column">
+        <div id="Profile" class="center-me tabcontent">
+            <div class="right-image">
+                <img src="assets/images/avatar.png" alt="default-avator">
+            </div>
+            <p class="role"><span>Name:  </span>Micky<p>
+            <p class="role"><span>Role:  </span>Manager</p>
+            <p class="role"><span>Status:  </span>Active</p>
+        </div>
+    </div>
+
+    <!-- products table -->
+    <div class="tabcontent" id="Products">
+        <table>
+            <tr>
+                <th>Product Name</th>
+                <th>Category</th>
+                <th>In-Stock Quantity</th>
+            </tr>
+            <tr>
+                <td>Toilet Paper</td>
+                <td>Sanitary Wear</td>
+                <td>600</td>
+            </tr>
+            <tr>
+                <td>Cooking oil</td>
+                <td>Food Products</td>
+                <td>1200</td>
+            </tr>
+            <tr>
+                <td>Mattresses</td>
+                <td>Bedroom Products</td>
+                <td>2400</td>
+            </tr>
+            <tr>
+                <td>Plastics</td>
+                <td>Kitchen Ware</td>
+                <td>5600</td>
+            </tr>
+            <tr>
+                <td>Cakes</td>
+                <td>bakeries</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>Harpic Gel 100ml</td>
+                <td>Sanitary Wear</td>
+                <td>2000</td>
+            </tr>
+            <tr>
+                <td>Car seat covers</td>
+                <td>Car Accessories</td>
+                <td>78</td>
+            </tr>
+            <tr>
+                <td>Macbook pro</td>
+                <td>Computers/Laptops</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Baking Flour</td>
+                <td>Food Products</td>
+                <td>800</td>
+            </tr>
+            <tr>
+                <td>Soda 2Ltr</td>
+                <td>Food Products</td>
+                <td>620</td>
+            </tr>
+            <tr>
+                <td>Milk 1Ltr</td>
+                <td>Food Products</td>
+                <td>700</td>
+            </tr>
+            <tr>
+                <td>OMO Detergent 1Kg</td>
+                <td>Sanitary Wear</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Tents 10 * 10</td>
+                <td>Out door gear</td>
+                <td>30</td>
+
+            </tr>
+            <tr>
+                <td>Bread 1Kg</td>
+                <td>Bakeries</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+                <td colspan="3"><button class="tablink green btn" onclick="openPage('Add-Product', this,)">Add Product</button>
+                    <button class="tablink btn">Delete Product</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- sales table -->
+    <div class="column tabcontent" id="Sales">
+        <table>
+            <tr>
+                <th>Product Name</th>
+                <th>Quantity Sold</th>
+                <th>Price Per Item</th>
+            </tr>
+            <tr>
+                <td>Toilet Paper</td>
+                <td>230</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+                <td>Cooking oil</td>
+                <td>29</td>
+                <td>21.000</td>
+            </tr>
+            <tr>
+                <td>Mattresses</td>
+                <td>34</td>
+                <td>240.000</td>
+            </tr>
+            <tr>
+                <td>Plastics</td>
+                <td>340</td>
+                <td>1200</td>
+            </tr>
+            <tr>
+                <td>Cakes</td>
+                <td>300</td>
+                <td>2000</td>
+            </tr>
+            <tr>
+                <td>Harpic Gel 100ml</td>
+                <td>7</td>
+                <td>4000</td>
+            </tr>
+            <tr>
+                <td>Car seat covers</td>
+                <td>8</td>
+                <td>65000</td>
+            </tr>
+            <tr>
+                <td>Macbook pro</td>
+                <td>3</td>
+                <td>96000.000</td>
+
+            </tr>
+            <tr>
+                <td>Baking Flour</td>
+                <td>97</td>
+                <td>6800</td>
+            </tr>
+            <tr>
+                <td>Soda 2Ltr</td>
+                <td>300</td>
+                <td>3000</td>
+            </tr>
+            <tr>
+                <td>Milk 1Ltr</td>
+                <td>230</td>
+                <td>3000</td>
+            </tr>
+            <tr>
+                <td>OMO Detergent 1Kg</td>
+                <td>45</td>
+                <td>5800</td>
+            </tr>
+            <tr>
+                <td>Tents 10 * 10</td>
+                <td>2</td>
+                <td>160.000</td>
+            </tr>
+            <tr>
+                <td>Bread 1Kg</td>
+                <td>460</td>
+                <td>30000</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Attendants table -->
+    <div class="column tabcontent" id="All-Attendants">
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>Attendant Name</th>
+                <th>Total Sales</th>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Anders</td>
+                <td>234</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Michael</td>
+                <td>600</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Rolands</td>
+                <td>54</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Bennett</td>
+                <td>67</td>
+            </tr>
+            <tr>
+                <td colspan="3"><button class="tablink green btn" onclick="openPage('Add-Attendant', this,)">New Attendant</button>
+            </tr>
+        </table>
+    </div>
+
+    <!-- add product -->
+    <div class="tabcontent column" id="Add-Product">
+        <form action="#">
+            <p>New Product</p>
+            <input type="text" name="name" placeholder="Product name" required>
+            <select name="category">
+                <option value="sanitary Wear">Sanitary Wear</option>
+                <option value="food products">Food Products</option>
+                <option value="kitchen wear">Kitchen Ware</option>
+                <option value="bedroom products">Bedroom Products</option>
+                <option value="bakeries">Bakeries</option>
+                <option value="car accessories">Car Accessories</option>
+                <option value="out door gear">Out Door Gear</option>
+            </select>
+            <input type="number" name="quantity" min="1" placeholder="Stock quantity" required>
+            <input type="number" name="price" min="100" step="50" placeholder="Product price" required>
+            <input type="submit" value="Create">
+        </form>
+    </div>
+
+    <!-- create attendant account -->
+    <div class="tabcontent column" id="Add-Attendant">
+        <form action="#">
+            <p>New Attendant</p>
+            <input type="text" name="name" placeholder="Name" required>
+            <select name="" placeholder="Id" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Create">
+        </form>
+    </div>
+
+    <!-- footer -->
+    <div class="footer"><img class="cover-image" src="assets/images/logo_inv.png" alt="todo-list image">
+        <small>&copy;Store Manager 2018</small>
+    </div>
+
+</body>
+</html>

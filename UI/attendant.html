@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/attendant.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <script type="text/javascript" src="assets/js/main.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="heading" id="my-heading">
+            <span class="title-1 logo"><img src="assets/images/logo_inv.png">Store Manager</span>
+            <div>
+                <a href="index.html">Logout</a>
+                <a <button class="tablink" onclick="openPage('info-column', this,)">Shopping Cart</button></a>
+                <a <button class="tablink" onclick="openPage('Product-Info', this,)">Check-Product</button></a>
+                <a <button class="tablink" onclick="openPage('Products', this,)">Products</button></a>
+                <a <button class="tablink" onclick="openPage('Profile', this,)" id="defaultOpen">Profile</button></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- profile card -->
+    <div class="profile">
+        <div id="Profile" class="center-me tabcontent">
+            <div class="right-image">
+                <img src="assets/images/avatar.png" alt="default-avator">
+            </div>
+            <p><span>Role: </span>Attendant</p>
+            <p><span>Name: </span>Micky</p>
+            <p><span>Status: </span>Active</p>
+            <p><span>Total Sales: </span>245</p>
+            <p><span>Product sales: </span>245</p>
+            <p><span>Sales revenue: </span>346.0000shs</p>
+        </div>
+    </div>
+
+    <!-- shopping cart -->
+    <div id="info-column" class="column tabcontent">
+        <div id="todo-list-header">
+            <p>shopping chart</p>
+            <input type="text" id="myInput" placeholder="Enter Product Name...">
+            <span onclick="newElement()" class="addBtn">Add</span>
+        </div>
+        <ul id="todo-list-items">
+            <li>Cooking Oil</li>
+            <li>Detergent</li>
+            <li>Scrubbing brush</li>
+            <li>Tooth paste</li>
+        </ul>
+        <input type="submit" value="Make Sale">
+    </div>
+
+    <!-- Product card -->
+    <div id="Macbook" class="display-product column tabcontent">
+        <img src="assets/images/macbook air.jpg" alt="Macbook Air" style="width:100%">
+        <h1>MacBook Air</h1>
+        <p class="price">$1299.0</p>
+        <p>MacBook Pro 13in (2018) specs</p>
+        <p>Quad-core Intel Core i5 and i7 processors up to 2.7GHz with Turbo Boost up to 4.5GHz</p>
+        <p>Intel Iris Plus integrated graphics 655 with 128MB of eDRAM</p>
+        <p>Up to 2TB SSD storage</p>
+        <p>True Tone display</p>
+        <p>Apple T2 chip</p>
+        <p>Touch Bar</p>
+        <p><button class="" onclick="openPage('info-column', this,)">Add to Cart</button></p>
+    </div>
+
+    <div id="Toilet Paper" class="display-product column tabcontent">
+        <img src="assets/images/tp.jpeg" alt="Toilet Paper" style="width:100%">
+        <h1>Paseo smart Toilet Paper</h1>
+        <p class="price">$2.0</p>
+        <p>Comfortable toilet paper rolls</p>
+        <p>12 pieces per rolls</p>
+        <p><button class="" onclick="openPage('info-column', this,)">Add to Cart</button></p>
+    </div>
+
+    <div id="Cooking Oil" class="display-product column tabcontent">
+        <img src="assets/images/cooking oil.jpg" alt="Ufuta Cooking Oil" style="width:100%">
+        <h1>Ufuta Cooking Oil</h1>
+        <p class="price">$4.0</p>
+        <p>Collestral free cooking oil made from natural sun flower</p>
+        <p>5 Litres</p>
+        <p><button class="" onclick="openPage('info-column', this,)">Add to Cart</button></p>
+    </div>
+
+    <div id="Mattress" class="display-product column tabcontent">
+        <img src="assets/images/matt.jpg" alt="Mattress" style="width:100%">
+        <h1>Soft Form Mattress</h1>
+        <p class="price">$4.0</p>
+        <p>Extending comfort to your bedroom</p>
+        <p>Available in 5 * 6 / 6 * 6</p>
+        <p><button class="" onclick="openPage('info-column', this,)">Add to Cart</button></p>
+    </div>
+
+    <!-- products info -->
+    <div id="Product-Info" class="column tabcontent">
+        <table>
+            <tr>
+                <th>Product Name [Click product name to view details]</th>
+                <th>Category</th>
+                <th>Price Per Item</th>
+            </tr>
+            <tr>
+                <td><a onclick="openPage('Toilet Paper', this,)">Toilet Paper</a></td>
+                <td>Sanitary Wear</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+                <td><a onclick="openPage('Cooking Oil', this,)">Cooking Oil</a></td>
+                <td>Food Products</td>
+                <td>12000</td>
+            </tr>
+            <tr>
+                <td><a onclick="openPage('Mattress', this,)">Mattress</a></td>
+                <td>Bedroom Products</td>
+                <td>240000</td>
+            </tr>
+            <tr>
+                <td>Plastics</td>
+                <td>Kitchen Ware</td>
+                <td>5600</td>
+            </tr>
+            <tr>
+                <td>Cakes</td>
+                <td>bakeries</td>
+                <td>7000</td>
+            </tr>
+            <tr>
+                <td>Harpic Gel 100ml</td>
+                <td>Sanitary Wear</td>
+                <td>10000</td>
+            </tr>
+            <tr>
+                <td>Car seat covers</td>
+                <td>Car Accessories</td>
+                <td>78000</td>
+            </tr>
+            <tr>
+                <td><a onclick="openPage('Macbook', this,)">Macbook pro</a></td>
+                <td>Computers/Laptops</td>
+                <td>9600.000</td>
+            </tr>
+            <tr>
+                <td>Baking Flour</td>
+                <td>Food Products</td>
+                <td>8000</td>
+            </tr>
+            <tr>
+                <td>Soda 2Ltr</td>
+                <td>Food Products</td>
+                <td>3000</td>
+            </tr>
+            <tr>
+                <td>Milk 1Ltr</td>
+                <td>Food Products</td>
+                <td>3000</td>
+            </tr>
+            <tr>
+                <td>OMO Detergent 1Kg</td>
+                <td>Sanitary Wear</td>
+                <td>8000</td>
+            </tr>
+            <tr>
+                <td>Tents 10 * 10</td>
+                <td>Out door gear</td>
+                <td>134000</td>
+
+            </tr>
+            <tr>
+                <td>Bread 1Kg</td>
+                <td>Bakeries</td>
+                <td>4000</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- product table-->
+    <div id="Products" class="column tabcontent">
+        <table>
+            <tr>
+                <th>Product Name</th>
+                <th>Category</th>
+                <th>In-Stock Quantity</th>
+            </tr>
+            <tr>
+                <td>Toilet Paper</td>
+                <td>Sanitary Wear</td>
+                <td>600</td>
+            </tr>
+            <tr>
+                <td>Cooking oil</td>
+                <td>Food Products</td>
+                <td>1200</td>
+            </tr>
+            <tr>
+                <td>Mattresses</td>
+                <td>Bedroom Products</td>
+                <td>2400</td>
+            </tr>
+            <tr>
+                <td>Plastics</td>
+                <td>Kitchen Ware</td>
+                <td>5600</td>
+            </tr>
+            <tr>
+                <td>Cakes</td>
+                <td>bakeries</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>Harpic Gel 100ml</td>
+                <td>Sanitary Wear</td>
+                <td>2000</td>
+            </tr>
+            <tr>
+                <td>Car seat covers</td>
+                <td>Car Accessories</td>
+                <td>78</td>
+            </tr>
+            <tr>
+                <td>Macbook pro</td>
+                <td>Computers/Laptops</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Baking Flour</td>
+                <td>Food Products</td>
+                <td>800</td>
+            </tr>
+            <tr>
+                <td>Soda 2Ltr</td>
+                <td>Food Products</td>
+                <td>620</td>
+            </tr>
+            <tr>
+                <td>Milk 1Ltr</td>
+                <td>Food Products</td>
+                <td>700</td>
+            </tr>
+            <tr>
+                <td>OMO Detergent 1Kg</td>
+                <td>Sanitary Wear</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Tents 10 * 10</td>
+                <td>Out door gear</td>
+                <td>30</td>
+
+            </tr>
+            <tr>
+                <td>Bread 1Kg</td>
+                <td>Bakeries</td>
+                <td>1000</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- footer -->
+    <!-- <div class="footer"><img class="cover-image" src="assets/images/logo_inv.png" alt="store image">
+        <small>&copy;Store Manager 2018</small>
+    </div> -->
+
+</body>
+</html>
