@@ -114,7 +114,6 @@ input {
     border-top: none;
     width: 100%;
     margin: 10px 0;
-    /* opacity: 0.85; */
     display: block;
     font-size: 17px;
     line-height: 20px;
@@ -164,9 +163,7 @@ input[type="submit"] {
 
   /* Style the tab content (and add height:100% for full page content) */
   .tabcontent {
-    /* color: white; */
     display: none;
-    /* padding: 100px 20px; */
     height: 100%;
   }
 

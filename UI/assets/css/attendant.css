@@ -7,7 +7,6 @@
 body {
     font-family: Raleway, "Open Sans", "Helvetica Neue", Helvetica, Aerial, sans-serif;
     padding: 20px;
-    /* background-color: indianred; */
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
@@ -16,7 +15,6 @@ body {
 /*-----------------header css--------------*/
 .heading {
     overflow: hidden;
-    /* background-color: indianred; */
     color: white;
     padding: 10px 10px;
     border-bottom: 5px solid black;
@@ -90,7 +88,7 @@ body {
 }
 
 
-/* ----------body------- */
+/* ----body-----*/
 
 table {
     font-family: arial, sans-serif;
@@ -123,7 +121,7 @@ tr:nth-child(even) {
     background-color: #dddddd;
 }
 
-/* ---profile----- */
+/* ---profile card----- */
 .center-me {
     border-bottom: 5px solid black,
 }
@@ -139,7 +137,14 @@ span {
     color: grey;
     font-size: 18px;
 }
-/* product display card */
+
+ #Profile p {
+    font-family: cursive;
+    font-size: 20px;
+  }
+
+
+/* ---product display card---- */
 .display-product {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
@@ -178,7 +183,7 @@ span {
         width: 80px;
     }
 
-/* Style tab links */
+/* ----Style tab links -----*/
 .tablink {
     color: white;
     outline: none;
@@ -197,27 +202,20 @@ span {
     color: white;
   }
 
-  /* Style the tab content (and add height:100% for full page content) */
+  /* ----Style the tab content (and add height:100% for full page content) -----*/
   .tabcontent {
     display: none;
     height: 100%;
     margin-top: 5px;
   }
-  /* profile */
-  #Profile p {
-    font-family: cursive;
-    font-size: 20px;
-  }
 
 /* ---shopping cart-- */
-
 #info-column p {
     text-align: center;
     font-size: 20px;
     word-spacing: 10px;
 }
 #info-column {
-    /* border-radius: 10px; */
     height: 100%;
     margin-top: 10px;
     font-family: cursive;
@@ -233,7 +231,6 @@ span {
 
  /* Style the header */
 #todo-list-header {
-    /* background-color: indianred; */
     padding: 15px 10px;
     color: black;
     text-align: center;
@@ -243,7 +240,7 @@ span {
       padding-top: 0;
   }
 
-/* Style the input */
+/* -----Style the input ----*/
 input {
     margin: 0;
     border: none;
@@ -265,12 +262,11 @@ input {
     text-decoration: none;
     margin: auto;
     cursor: pointer;
-    /* border-radius: 16px; */
     font-size: 16px;
     width: 100%;
 }
 
-/* Style the "Add" button */
+/* -----Style the "Add" button ------*/
 .addBtn {
     border: none;
     border: 3px solid indianred;
@@ -287,7 +283,7 @@ input {
     border-radius: 0;
   }
 
-/* Clear floats after the header */
+/* -----Clear floats after the header -----*/
 .todo-list-header:after {
     content: "";
     display: table;
@@ -315,35 +311,34 @@ ul {
     position: relative;
     padding: 12px 8px 12px 40px;
     list-style-type: none;
-    /* background: #ddd; */
     font-size: 18px;
     transition: 0.2s;
 
-    /* make the list items unselectable */
+    /* ----make the list items unselectable ----*/
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
   }
 
-/* Set all odd list items to a different color (zebra-stripes) */
+/* -----Set all odd list items to a different color (zebra-stripes) --------*/
   ul li:nth-child(odd) {
     background: #eee;
   }
 
-/* Darker background-color on hover */
+/*-- Darker background-color on hover ------*/
 ul li:hover {
     background: gray;
   }
 
-/* When clicked on, add a background color and strike out text */
+/* -----When clicked on, add a background color and strike out text ----*/
 ul li.checked {
     background: #888;
     color: #fff;
     text-decoration: line-through;
 }
 
-/* Add a "checked" mark when clicked on */
+/*---- Add a "checked" mark when clicked on -----*/
 ul li.checked::before {
     content: '';
     position: absolute;
@@ -357,7 +352,7 @@ ul li.checked::before {
     width: 7px;
   }
 
-  /* Style the close button */
+  /*----- Style the close button ------*/
 .close {
     position: absolute;
     right: 0;
@@ -394,7 +389,7 @@ ul li.checked::before {
         max-width: 100%;
     }
 
-/* Clear floats after the columns */
+/*---- Clear floats after the columns -----*/
 
 .column:after {
     content: "";
