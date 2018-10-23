@@ -22,4 +22,6 @@ Store Manager web application facilitates store managers with an interface to mo
 * An attendant can view all available products and their related quantities.
 * An attendant can search and add items to the clients shopping cart.
 
+[click here to preview the page templates!!](https://mkibuuka.github.io/Store_manager/UI/index.html) 
+
 
