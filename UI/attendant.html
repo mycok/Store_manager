@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/attendant.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <script type="text/javascript" src="assets/js/main.js"></script>
 </head>
 
 <body>
@@ -20,6 +21,7 @@
             </div>
         </div>
     </nav>
+
     <!-- profile card -->
     <div class="profile">
         <div id="Profile" class="center-me tabcontent">
@@ -34,6 +36,7 @@
             <p><span>Sales revenue: </span>346.0000shs</p>
         </div>
     </div>
+
     <!-- shopping cart -->
     <div id="info-column" class="column tabcontent">
         <div id="todo-list-header">
@@ -49,6 +52,7 @@
         </ul>
         <input type="submit" value="Make Sale">
     </div>
+
     <!-- Product card -->
     <div id="Macbook" class="display-product column tabcontent">
         <img src="assets/images/macbook air.jpg" alt="Macbook Air" style="width:100%">
@@ -90,6 +94,7 @@
         <p>Available in 5 * 6 / 6 * 6</p>
         <p><button class="" onclick="openPage('info-column', this,)">Add to Cart</button></p>
     </div>
+
     <!-- products info -->
     <div id="Product-Info" class="column tabcontent">
         <table>
@@ -171,6 +176,7 @@
             </tr>
         </table>
     </div>
+
     <!-- product table-->
     <div id="Products" class="column tabcontent">
         <table>
@@ -252,29 +258,11 @@
             </tr>
         </table>
     </div>
+
     <!-- footer -->
     <!-- <div class="footer"><img class="cover-image" src="assets/images/logo_inv.png" alt="store image">
         <small>&copy;Store Manager 2018</small>
     </div> -->
-<script>
-    function openPage(pageName, elmnt) {
-        var i, tabcontent, tablinks;
-        // Hide all elements with class="tabcontent" by default */
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-        }
 
-        // Remove the background color of all tablinks/buttons
-        tablinks = document.getElementsByClassName("tablink");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].style.backgroundColor = "";
-        }
-        // Show the specific tab content
-        document.getElementById(pageName).style.display = "block";
-    }
-    // Get the element with id="defaultOpen" and click on it
-    document.getElementById("defaultOpen").click();
-</script>
 </body>
 </html>
